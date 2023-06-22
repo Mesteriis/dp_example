@@ -60,4 +60,3 @@ deployment:
     - scp -prq $CI_PROJECT_DIR/* $DEPLOY_SERVER_USER@$DEPLOY_SERVER_IP:$DEPLOY_SERVER_PATH/
     - ssh $DEPLOY_SERVER_USER@$DEPLOY_SERVER_IP "cd $DEPLOY_SERVER_PATH && docker-compose -f docker-compose.prod.yml stop"
     - ssh $DEPLOY_SERVER_USER@$DEPLOY_SERVER_IP "cd $DEPLOY_SERVER_PATH && docker-compose -f docker-compose.prod.yml up -d"
-
