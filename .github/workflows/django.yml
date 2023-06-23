@@ -38,4 +38,3 @@ jobs:
       - run: poetry install --no-interaction
       - run: poetry run pre-commit run -a
       - run: poetry run python manage.py test
-
